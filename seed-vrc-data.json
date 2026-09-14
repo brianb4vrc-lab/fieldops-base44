@@ -1,0 +1,46 @@
+{
+  "company": {
+    "code": "vrc",
+    "name": "Vic Russell Construction",
+    "admin_emails": [
+      "kevin@vicrussellconstruction.com",
+      "accounting@vicrussellconstruction.com",
+      "tracy@vicrussellconstruction.com",
+      "tracym@vicrussellconstruction.com",
+      "brianb@vicrussellconstruction.com"
+    ],
+    "email_to": "Accounting@VicRussellConstruction.com",
+    "email_cc": "Tracy@VicRussellConstruction.com,Kevin@VicRussellConstruction.com,BrianB@VicRussellConstruction.com,TracyM@VicRussellConstruction.com",
+    "is_vrc": true
+  },
+  "jobs": [
+    {"job_number": "5400", "name": "Office"},
+    {"job_number": "5450", "name": "Shop"},
+    {"job_number": "5459", "name": "Quarry"},
+    {"job_number": "5460", "name": "Bagging Plant"},
+    {"job_number": "5620", "name": "USDA Haul Road"},
+    {"job_number": "54602", "name": "Skanska - LCHC", "address": "51601 Bluewood Ave."},
+    {"job_number": "54605", "name": "Danco - Huntington Apts", "address": "51771 Huntington Rd."},
+    {"job_number": "54641", "name": "Habitat - Park View"},
+    {"job_number": "54643", "name": "SunWest - Wickiup Station Apts", "address": "52695 Drafter Rd."},
+    {"job_number": "54658", "name": "SunWest - Wickiup Apts. Phase 2", "address": "52711 Drafter Rd."},
+    {"job_number": "54670-26", "name": "Habitat Town Homes – Pushouts / Lot 5 Clear (Habitat for Humanity)"}
+  ],
+  "equipment": [
+    "6129 – 91 Kenworth Dump Truck",
+    "6145 – JD200 CLC Excavator",
+    "61216 – Komatsu 210-10 Excavator",
+    "61223 – Komatsu 210-11 Excavator",
+    "61260 – Komatsu D61PXi-24 Dozer",
+    "6169 – 580 Backhoe",
+    "Hand Tools / Labor Only",
+    "RENTAL – Other"
+  ],
+  "vehicles": [
+    "6117 – 2006 F250",
+    "61219 – 2015 F150 (Kevin)",
+    "61244 – 2014 F150 Blue",
+    "61252 – 2020 Ford F150 (Vic)",
+    "None"
+  ]
+}
