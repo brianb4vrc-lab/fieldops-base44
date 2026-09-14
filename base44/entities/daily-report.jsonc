@@ -1,0 +1,26 @@
+{
+  "name": "DailyReport",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "user_email": { "type": "string", "format": "email" },
+    "report_date": { "type": "string", "format": "date" },
+    "job_number": { "type": "string" },
+    "weather": { "type": "string" },
+    "work_performed": { "type": "string" },
+    "crew": { "type": "string" },
+    "equipment_used": { "type": "string" },
+    "materials": { "type": "string" },
+    "delays": { "type": "string" },
+    "safety": { "type": "string" },
+    "visitors": { "type": "string" },
+    "photo_urls": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["company_id", "user_email", "report_date"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

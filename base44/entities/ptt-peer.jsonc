@@ -1,0 +1,18 @@
+{
+  "name": "PttPeer",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "user_email": { "type": "string", "format": "email" },
+    "peer_id": { "type": "string" },
+    "display_name": { "type": "string" },
+    "last_seen": { "type": "string", "format": "date-time" }
+  },
+  "required": ["company_id", "user_email", "peer_id"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Equipment",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "unit_code": { "type": "string" },
+    "label": { "type": "string" },
+    "category": { "type": "string" }
+  },
+  "required": ["company_id", "label"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

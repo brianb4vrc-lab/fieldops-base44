@@ -1,0 +1,11 @@
+{
+  "name": "fieldops",
+  "description": "Multi-company construction FieldOps: time cards, daily reports, change orders, drawings",
+  "visibility": "private",
+  "entitiesDir": "./entities",
+  "functionsDir": "./functions",
+  "authDir": "./auth",
+  "site": {
+    "outputDirectory": "./dist"
+  }
+}

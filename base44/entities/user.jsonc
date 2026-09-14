@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string", "description": "Company id e.g. vrc, acme" },
+    "company_name": { "type": "string" },
+    "is_company_admin": { "type": "boolean", "default": false },
+    "employee_name": { "type": "string" },
+    "employee_id": { "type": "string" }
+  },
+  "required": ["company_id"]
+}

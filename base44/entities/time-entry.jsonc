@@ -1,0 +1,29 @@
+{
+  "name": "TimeEntry",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "user_email": { "type": "string", "format": "email" },
+    "employee_name": { "type": "string" },
+    "work_date": { "type": "string", "format": "date" },
+    "job_number": { "type": "string" },
+    "job_name": { "type": "string" },
+    "action": { "type": "string" },
+    "note": { "type": "string" },
+    "class_equipment": { "type": "string" },
+    "vehicle": { "type": "string" },
+    "cost_code": { "type": "string" },
+    "hours": { "type": "number" },
+    "start_time": { "type": "string", "format": "date-time" },
+    "end_time": { "type": "string", "format": "date-time" },
+    "is_running": { "type": "boolean", "default": false },
+    "submitted": { "type": "boolean", "default": false }
+  },
+  "required": ["company_id", "user_email", "work_date", "action"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

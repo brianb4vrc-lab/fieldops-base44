@@ -1,0 +1,20 @@
+{
+  "name": "Drawing",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "job_number": { "type": "string" },
+    "title": { "type": "string" },
+    "file_url": { "type": "string" },
+    "file_type": { "type": "string", "enum": ["pdf", "image"] },
+    "scale_ft_per_px": { "type": "number" },
+    "uploaded_by": { "type": "string", "format": "email" }
+  },
+  "required": ["company_id", "title", "file_url"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

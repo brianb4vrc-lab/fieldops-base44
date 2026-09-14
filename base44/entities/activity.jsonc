@@ -1,0 +1,16 @@
+{
+  "name": "Activity",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "name": { "type": "string" },
+    "category": { "type": "string" }
+  },
+  "required": ["company_id", "name"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

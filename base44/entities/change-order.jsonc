@@ -1,0 +1,24 @@
+{
+  "name": "ChangeOrder",
+  "type": "object",
+  "properties": {
+    "company_id": { "type": "string" },
+    "job_label": { "type": "string" },
+    "gc_company": { "type": "string" },
+    "gc_name": { "type": "string" },
+    "scope": { "type": "string" },
+    "est_hours": { "type": "string" },
+    "materials_notes": { "type": "string" },
+    "supervisor": { "type": "string" },
+    "signature_url": { "type": "string" },
+    "status": { "type": "string", "enum": ["pending_admin", "approved", "scheduled", "rejected"], "default": "pending_admin" },
+    "submitted_by": { "type": "string", "format": "email" }
+  },
+  "required": ["company_id", "scope", "gc_name", "submitted_by"],
+  "rls": {
+    "create": { "data.company_id": "{{user.data.company_id}}" },
+    "read": { "data.company_id": "{{user.data.company_id}}" },
+    "update": { "data.company_id": "{{user.data.company_id}}" },
+    "delete": { "data.company_id": "{{user.data.company_id}}" }
+  }
+}

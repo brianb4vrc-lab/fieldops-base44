@@ -1,0 +1,20 @@
+{
+  "name": "Company",
+  "type": "object",
+  "title": "Company",
+  "properties": {
+    "code": { "type": "string" },
+    "name": { "type": "string" },
+    "admin_emails": { "type": "array", "items": { "type": "string", "format": "email" } },
+    "email_to": { "type": "string" },
+    "email_cc": { "type": "string" },
+    "is_vrc": { "type": "boolean", "default": false }
+  },
+  "required": ["code", "name"],
+  "rls": {
+    "create": true,
+    "read": true,
+    "update": { "user_condition": { "role": "admin" } },
+    "delete": { "user_condition": { "role": "admin" } }
+  }
+}
